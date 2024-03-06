@@ -1,6 +1,12 @@
 package prog2.spring2024.exercise2;
 public class BookStore {
-    public class BookDetails {  
+    public enum BookDetails {  
+    BOOK1("001", "Carrie", "Stephen King", 272, "Horror", 3.98, 1974, "Wings", 14),
+    BOOK2("002", "The Firm", "Robin Waterfield / John Grisham", 448, "Thriller", 4.01, 1991, "Addison Wesley Publishing Company", 25),
+    BOOK3("003", "Slaughterhouse-Five", "Kurt Vonnegut Jr.", 275, "Sci-Fi", 4.1, 1969, "Dial Press", 18),
+    BOOK4("004", "The Great Gatsby", "F. Scott Fitzgerald", 188, "Classic", 3.91, 1925, "Scribner", 8),
+    BOOK5("005", "American Gods", "Neil Gaiman", 635, "Fantasy", 4.11, 2001, "Harper Collins", 4.11);
+
         private String bookID;  
         private String bookName;  
         private String bookAuthor;  
